@@ -1,0 +1,20 @@
+{
+
+  "manifest_version": 2,
+  "name": "Facebook Night Blocker",
+  "version": "1.0",
+
+  "description": "Doesn't allow you to access Facebook after 12 a.m. and before 7 a.m.",
+
+  "icons": {
+    "48": "icons/fb-48.png"
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["*://*.facebook.com/*"],
+      "js": ["fbnightblocker.js"]
+    }
+  ]
+
+}
